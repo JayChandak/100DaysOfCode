@@ -1,6 +1,6 @@
 class Solution {
     public String replaceDigits(String s) {
-    
+
     char[] array = s.toCharArray();
 	    for(int i = 1; i < array.length; i += 2) {
     	    array[i] = (char) (array[i - 1] + array[i] - '0');	
@@ -9,7 +9,7 @@ class Solution {
     }
 }
 
-/* Naive Approach --> Using O(1) Space & O(N) Time
+/* Naive Approach --> Using O(N) Time & O(1) Space
     public String replaceDigits(String s) {
 	    for(int i = 1; i < s.length();i += 2){        
 		    int c = (int) s.charAt(i-1);
