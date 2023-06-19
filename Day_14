@@ -11,11 +11,10 @@ class Solution {
                 stack.push(ch);
             else if(stack.peek() == ch)
                 stack.pop();
-        }    
-            
+        }                
         while(stack.size() > 0 )
             sb.insert(0,stack.pop());
-        
+
         return sb.toString();
     }
 }
