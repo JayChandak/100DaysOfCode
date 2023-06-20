@@ -1,0 +1,33 @@
+//Optimized 
+//Time Complexity O(N)
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int maximumSum = Integer.MIN_VALUE;
+        int sum = 0;
+
+        for(int i = 0; i < nums.length;i++){
+            sum += nums[i];
+            
+            if(sum > maximumSum){
+                maximumSum = sum;
+            }
+            sum = sum < 0 ? 0 : sum;
+        }
+        return maximumSum;
+    }
+}
+
+//Brute Force Solution
+//Time Complexity - O(N^2)
+//Gives TLE at large input of arrays 
+
+int maximumSum = Integer.MIN_VALUE;
+for(int i = 0; i < arr.length;i++){
+    int sum = 0;
+    for(int j = i; j < arr.length;j++){
+        if(sum > maximumSum){
+            maximumSum = sum;
+        }
+        sum = sum < 0 ? 0 : sum;
+    }
+}
