@@ -1,21 +1,21 @@
-class Solution {
+class Solution{
     public static int maxArea(int[] a) {
-    int maxArea = 0;
-    int left = 0;
-    int right = a.length-1;
-     
-    while(left < right){
-        int height = Math.min(a[left],a[right]);
-        int distance = right - left;
-        
-        int area = height * distance;
-        maxArea = Math.max(maxArea,area);
-        
-        if(a[left] < a[right])
-            left++;
-        else
-            right--;  
-    }
+        int maxArea = 0;
+        int left = 0;
+        int right = a.length - 1;
+
+        while(left < right){
+            int height = Math.min(a[left],a[right]);
+            int distance = right - left;
+            int area = height * distance;
+            maxArea = Math.max(maxArea,area);
+            if(a[left] < a[right]){
+                left++;
+            }
+            else{
+                right--;
+            }
+        }
         return maxArea;
     }
 }
