@@ -1,0 +1,19 @@
+class Solution {
+    public int missingNumber(int[] nums) {
+        int expectedSum = 0;
+        int sum = 0;
+        int length = nums.length;
+
+        for (int i = 0; i <= length;i++){
+            expectedSum += i;
+        }
+
+        for (int num : nums){
+            sum += num;
+        }
+
+        int missing = expectedSum - sum;
+
+        return missing;
+    }
+}
