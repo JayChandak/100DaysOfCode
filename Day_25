@@ -1,0 +1,24 @@
+class Solution {
+    public int[] leftRightDifference(int[] nums) {
+        int n = nums.length;
+        if(nums.length < 2) return new int[] {0};
+
+        int diff[] = new int[n], lSum[] = new int[n],rSum[] = new int[n];
+        int left = 0,right = 0;
+        
+        for(int i = 1;i < n;i++){
+            left += nums[i-1]; 
+            lSum[i]= left;            
+        }
+
+        for(int i = n - 2;i > -1;i--){
+            right += nums[i+1];
+            rSum[i] = right;             
+        }
+
+        for(int i = 0; i < nums.length;i++)
+            diff[i] = Math.abs(lSum[i] - rSum[i]);
+        
+        return diff;
+    }
+}
