@@ -1,0 +1,27 @@
+class Solution {    
+    
+// Generic Swap Method for swapping in Reference Type like - String,Integer
+    public <T> void swap(T[] array, int i, int j) {
+        T temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+
+// Swap method specifically for int arrays
+    public void swap(int[] array, int i, int j) {
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    public String[] sortPeople(String[] names, int[] heights) {
+        for (int i = 0; i < names.length; i++) {
+            for (int j = i + 1; j < names.length; j++) {
+                if (heights[i] < heights[j]) {
+                    swap(names, i, j);
+                    swap(heights, i, j);
+                }
+            }
+        }
+        return names;    
+    }
+}
