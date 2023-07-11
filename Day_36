@@ -9,6 +9,7 @@ class Solution {
             return (josephusProblem(n - 1, k) + k) % n;
     }
 }
+
 /*
 Example --> josephusProblem(5,2) = 2 + 1 ---> 3
     
