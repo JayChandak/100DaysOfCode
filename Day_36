@@ -1,0 +1,21 @@
+class Solution {
+    public int findTheWinner(int n, int k) {
+        return josephusProblem(n,k) + 1;
+    }
+    static int josephusProblem(int n,int k){
+        if(n == 1)
+            return 0;
+        else
+            return (josephusProblem(n - 1, k) + k) % n;
+    }
+}
+/*
+Example --> josephusProblem(5,2) = 2 + 1 ---> 3
+    
+    ((4,2) + 2) % 5 --> (0 + 2) % 5 == 2
+    ((3,2) + 2) % 4 --> (2 + 2) % 4 == 0
+    ((2,2) + 2) % 3 --> (0 + 2) % 3 == 2
+    ((1,2) + 2) % 2 --> (0 + 2) % 2 == 0
+
+    n == 1 --> returns 0 
+*/
