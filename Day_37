@@ -1,0 +1,21 @@
+class Solution {
+    public int fib(int n) {
+        // if(n == 1){
+        //     return 1;
+        // }
+        // int first = 0;
+        // int second = 1;
+        // int number = 0;
+        // for(int i = 2;i <= n;i++){
+        //     number = first + second;
+        //     first = second;
+        //     second = number;
+        // }
+        // return number;   
+
+        if(n <= 1) 
+            return n;
+        else
+            return  fib(n-1) + fib(n-2);        
+    }    
+}
