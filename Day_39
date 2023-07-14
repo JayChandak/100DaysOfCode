@@ -6,7 +6,6 @@ class Solution {
     for (int i = 0; i < n; i++) { 
         //  Sum of Primary Diagonal
             sum += mat[i][i]; 
-
         //  Sum of Secondary Diagonal
             if (i != n - i - 1) { 
                 sum += mat[i][n - i - 1]; 
