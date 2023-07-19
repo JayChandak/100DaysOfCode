@@ -1,0 +1,13 @@
+Day 44/100
+Problem - Balanced Binary Tree
+
+Approach - 
+Binary Tree is called Balanced, when the height of left subtree - height of right subtree is less than or equal to 1.
+
+Using max height function to get the heights.
+If the absolute difference between their heights is greater than 1, then it is not balanced tree so return -1.
+
+Repository - https://github.com/JayChandak/100DaysOfCode/blob/main/Day_44
+
+Time & Space Complexity - O(N)
+#100day
