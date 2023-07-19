@@ -1,1 +1,7 @@
-
+ 44/100
+Problem Check For Balanced Binary Tree
+Approach -
+Balanced Binary Tree -->   Height of Left Sub Tree - Height Of Right Sub Tree is always <= 1 
+Using the Max Height function finding their height and if the absolute difference is greater than   1 then, return -1
+Repository 
+Time & Space Complexity - O(N)
