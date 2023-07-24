@@ -8,7 +8,6 @@ class Solution {
             charCount[s.charAt(i) - 'a']++;
             charCount[t.charAt(i) - 'a']--;
         }
-
         for(int i : charCount){
             if(i != 0){
                 return false;
