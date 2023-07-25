@@ -1,21 +1,21 @@
 class Solution {
     public String reverseVowels(String s) {
-        int low = 0;
-        int high = s.length() - 1;
-        char array[] = s.toCharArray();
-        while(low < high){
-            if(!isVowel(array[low])){
-                low++;
+        int start = 0;
+        int end = s.length() - 1;
+        char array[] = s.toCharArray();        
+        while(start < end){
+            if(!isVowel(array[start])){
+                start++;
             }
-            else if(!isVowel(array[high])){
-                high--;
+            else if(!isVowel(array[end])){
+                end--;
             }
             else{
-                char temp = array[low];
-                array[low] = array[high];
-                array[high] = temp;
-                low++;
-                high--;
+                char temp = array[start];
+                array[start] = array[end];
+                array[end] = temp;
+                start++;
+                end--;
             }
         }
         return String.valueOf(array);
