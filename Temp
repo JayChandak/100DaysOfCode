@@ -1,1 +1,3 @@
-
+Ignoring non-alphanumeric characters, if and else if block ensures that only palindrome string is get checked moving start pointer right or end pointer left.
+If characters at start and end positions are not equal, returns false.
+If all characters are equal, it returns true. 
