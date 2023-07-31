@@ -1,6 +1,5 @@
-Day 45/100 
-Problem - Diameter of Binary Tree 
-Approach - 
-Repository - https://github.com/JayChandak/100DaysOfCode/blob/main/Day_45 
-Time & Space Complexity - O(N) 
-#100daysofcodechallenge
+We use two pointers, one starting from the beginning of the string (start) and the other from the end of the string (end).
+While the start pointer is less than the end pointer, we compare characters at these positions.
+We ignore non-alphanumeric characters, moving start pointer right or end pointer left if encountered.
+If the characters at start and end positions are not equal, the string is not a palindrome, and we return false.
+If all characters match, the string is a palindrome, and we return true.
