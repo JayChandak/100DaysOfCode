@@ -1,1 +1,12 @@
+Day 56/100
+Problem - Valid Palindrome
+Approach - Using Two Pointers
+Ignoring non-alphanumeric characters, if and else if block ensures that only palindrome string is get checked.
+moving start pointer right or end pointer left.
+If characters at start and end positions are not equal, returns false.
+If all characters are equal, it returns true.
 
+Repository - https://lnkd.in/gpd-xh6G
+Time Complexity - O(N)
+Space Complexity - O(1)
+#100daysofcodechallenge
