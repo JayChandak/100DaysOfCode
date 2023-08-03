@@ -1,0 +1,23 @@
+class Solution {
+    public int rob(int[] nums) {
+        int n = nums.length;        
+        if(n == 0) return 0;
+        if(n == 1) return nums[0];   
+
+    // creating array to store the amount.
+        int [] tempArr = new int[n]; 
+        tempArr[0] = nums[0];
+        tempArr[1] = Math.max(nums[0],nums[1]);          
+        for(int i = 2; i < n;i++){
+            tempArr[i] = Math.max(tempArr[i-1],tempArr[i-2] + nums[i]);
+        }        
+
+    // max will be stored at last index.
+        return tempArr[n-1]; 
+    }
+}
+/*      
+index      0  1  2  3 
+nums     [ 1, 2, 3, 1]
+tempArr  [ 1, 2, 4, 4]
+*/
