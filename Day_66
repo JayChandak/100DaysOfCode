@@ -1,0 +1,21 @@
+class Solution {
+    public int minimumRounds(int[] tasks) {
+        HashMap<Integer,Integer> map = new HashMap<>();
+        int result = 0;
+        // Counting the frequencies
+        for(int i = 0; i < tasks.length;i++){
+            map.put(tasks[i], map.getOrDefault(tasks[i],0) + 1);
+        }
+
+        for(int i : map.values()){
+            if(i == 1) {
+                return -1;                        
+            }
+            result += i / 3;                        
+            if(i % 3 != 0){
+                result++;
+            }
+        }
+        return result;
+    }
+}
