@@ -1,3 +1,13 @@
-Ignoring non-alphanumeric characters, if and else if block ensures that only palindrome string is get checked moving start pointer right or end pointer left.
-If characters at start and end positions are not equal, returns false.
-If all characters are equal, it returns true. 
+Day 66/100
+Problem -
+Approach -
+• Counting the occurrences of each task using HashMap
+• If any task occurs only once, returns -1. As it can't be paired.
+• Task can be done with same difficulty is 2 or 3.
+• If occurrence is perfectly divisible by 3, it will be stored in result.
+• If not, then incremented by 1 to handle it with 2 pairs.
+
+Repository - https://lnkd.in/gFB3Eg_N
+Time Complexity - O(N)
+Space Complexity - O(N)
+#100daysofcodechallenge
