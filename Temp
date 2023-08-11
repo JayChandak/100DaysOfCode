@@ -1,13 +1,19 @@
-Day 66/100
-Problem -
-Approach -
-• Counting the occurrences of each task using HashMap
-• If any task occurs only once, returns -1. As it can't be paired.
-• Task can be done with same difficulty is 2 or 3.
-• If occurrence is perfectly divisible by 3, it will be stored in result.
-• If not, then incremented by 1 to handle it with 2 pairs.
+Day 67/100
 
-Repository - https://lnkd.in/gFB3Eg_N
-Time Complexity - O(N)
-Space Complexity - O(N)
-#100daysofcodechallenge
+Problem - Guess Number Higher or Lower
+
+Approach - Using Binary Search
+
+Mentioned : "I pick a number from 1 to n."
+
+Possibility of the picked number, can be guessed through binary search.
+
+And Checking the values returned by guess function.
+
+Repository - https://github.com/JayChandak/100DaysOfCode/blob/main/Day_67
+
+Time Complexity - O(Log N)
+
+Space Complexity - O(1)
+
+#100daysofcodechallenge 
