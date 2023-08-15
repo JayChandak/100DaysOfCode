@@ -1,0 +1,22 @@
+class Solution {
+    public double myPow(double x, int n) {
+        // return Math.pow(x,n);
+
+        if(n == 0) return 1.0;
+        if(n < 0){
+            x = 1/x;            
+        }    
+        
+        long num = Math.abs((long)n);
+        double result = 1;
+        double base = x;
+        while(num > 0){
+            if(num % 2 == 1){
+                result = result * base;
+            }            
+            base = base * base; 
+            num = num/2;            
+        }
+        return result;
+    }
+}
