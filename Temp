@@ -1,18 +1,19 @@
-Day 67/100
+Day 72/100
 
-Problem - Guess Number Higher or Lower
+Problem - Ransom Note
 
-Approach - Using Binary Search
+Approach - 
 
-Mentioned : "I pick a number from 1 to n."
+• Counting the occurrences of each letter in the magazine using an array.
 
-Possibility of the picked number, can be guessed through binary search.
+• Iterating through the characters in the ransom note, decrementing the counts in the array, and returning false if any count goes below zero.
 
-And Checking the values returned by guess function.
+• Otherwise return true.
 
-Repository - https://github.com/JayChandak/100DaysOfCode/blob/main/Day_67
 
-Time Complexity - O(Log N)
+Repository - https://github.com/JayChandak/100DaysOfCode/blob/main/Day_73
+
+Time Complexity - O(N)
 
 Space Complexity - O(1)
 
