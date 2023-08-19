@@ -21,7 +21,7 @@ class Solution {
                 result[index] = nums[e] * nums[e];
                 e--;
             }
-            index++;
+            index--;
         }
         return result;
     }
