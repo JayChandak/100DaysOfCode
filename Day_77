@@ -25,6 +25,6 @@ class Solution {
                 temp = temp.next;   
             }
         }
-        return temp.next;
+        return res.next;
     }
 }
