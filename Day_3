@@ -3,8 +3,7 @@ class Solution {
         // To reduce the number of rotations, array size = 5, k = 5
         // it remains same
         int n = nums.length;
-        k = k % n;
-        
+        k = k % n;        
         reverse(nums,0,n-k-1);
         reverse(nums,n-k,n-1);
         reverse(nums,0,n-1);
