@@ -13,7 +13,6 @@ class Solution {
         circularMaxSum = totalSum + kadane(nums);        
         return Math.max(maxSum, circularMaxSum);
     }
-
     private int kadane(int[] nums) {
         int maxSum = nums[0];
         int currentSum = nums[0];        
