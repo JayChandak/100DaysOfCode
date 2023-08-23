@@ -1,1 +1,11 @@
-
+Day 79/100
+Problem - Reorder List
+Approach 
+1.Finding the Middle node of the List
+2.Creating two list
+   One till half of the node
+   Second after the half, (reversed)
+3.Merging the list in alternate order.
+Time Complexity - 
+Space Complexity - 
+#100days
