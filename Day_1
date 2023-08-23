@@ -1,9 +1,7 @@
 class Solution {
-    public boolean isPalindrome(int x) {
-        
+    public boolean isPalindrome(int x) {        
         if(x < 0)
-            return false; 
-            
+            return false;             
         int reversedNumber = 0, remainder;
         int temp = x;
         while(temp != 0){
