@@ -1,17 +1,16 @@
-Day 73/100
+Day 79/100
 
-Problem - Ransom Note
+Problem - Reorder List
 
-Approach - 
+Approach - 3 Steps
 
-• Counting the occurrences of each letter in the magazine using an array.
+1. Finding Middle Element
 
-• Iterating through the characters in the ransom note, decrementing the counts in the array, and returning false if any count goes below zero.
+2. New List from the next node of Middle and then reversing the second Half
 
-• Otherwise return true.
+3. Merging the first half & second half of lists in alternate order.
 
-
-Repository - https://github.com/JayChandak/100DaysOfCode/blob/main/Day_73
+Repository - 
 
 Time Complexity - O(N)
 
