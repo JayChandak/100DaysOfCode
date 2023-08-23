@@ -1,6 +1,5 @@
 class Solution {
     public String replaceDigits(String s) {
-
     char[] array = s.toCharArray();
 	    for(int i = 1; i < array.length; i += 2) {
     	    array[i] = (char) (array[i - 1] + array[i] - '0');	
