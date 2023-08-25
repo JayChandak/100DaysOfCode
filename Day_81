@@ -1,0 +1,23 @@
+class Solution {
+    public boolean detectCapitalUse(String word) {
+        int capitals = 0, lows = 0, first = 0;
+        for(char ch: word.toCharArray()){
+            if(ch >= 65 && ch <= 90){
+                capitals++;
+                if(first == 0){
+                    first = 1;
+                }
+            }
+            else{
+                lows++;
+                if(first == 0){
+                    first = 2;
+                }
+            }
+        }
+        if(capitals == 0 || lows == 0 || first == 1 && capitals == 1){
+            return true;
+        }
+        return false;
+    }
+}
