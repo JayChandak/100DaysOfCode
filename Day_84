@@ -1,1 +1,7 @@
-Day 
+Start with left at 0 and right at n.
+
+Binary Search: Use binary search to find the maximum number of complete rows.
+
+Iteration: Keep adjusting left or right until they meet.
+
+Result: Return right as the maximum complete rows possible without exceeding n.
