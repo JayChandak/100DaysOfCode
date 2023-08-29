@@ -1,8 +1,8 @@
 class Solution {
+// Time Complexity - O(log N)
     public int arrangeCoins(int n) {
         long left = 0;
-        long right = n;
-        
+        long right = n;        
         while (left <= right) {
             long mid = left + (right - left) / 2;
             long sum = mid * (mid + 1) / 2;            
@@ -17,3 +17,24 @@ class Solution {
         return (int)right; 
     }
 }
+
+/*
+Time Complexity - O(n)
+
+class Solution {
+    public int arrangeCoins(int n) {
+        int rowCount =  0;
+        while(n > 0){
+            rowCount++;
+            n -= rowCount;
+        }
+        if(n == 0){
+            return rowCount;
+        }
+        else{
+            return rowCount - 1;
+        }
+    }
+}
+
+*/
