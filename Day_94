@@ -1,0 +1,31 @@
+class MyHashMap {
+    private static final int SIZE = 2000000; 
+    private int[] values; // An array to store values
+    private boolean[] hasKey; // A flag array to indicate if a key exists
+
+    public MyHashMap() {
+        values = new int[SIZE];
+        hasKey = new boolean[SIZE];
+    }
+    public void put(int key, int value) {
+        values[key] = value;
+        hasKey[key] = true; 
+    }
+    public int get(int key) {
+        if (hasKey[key]) {
+            return values[key]; 
+        } else {
+            return -1; 
+        }
+    }
+    public void remove(int key) {
+        hasKey[key] = false; 
+    }
+}
+/**
+ * Your MyHashMap object will be instantiated and called as such:
+ * MyHashMap obj = new MyHashMap();
+ * obj.put(key,value);
+ * int param_2 = obj.get(key);
+ * obj.remove(key);
+ */
