@@ -1,9 +1,1 @@
-Day 92/100
-Problem - Number 1 Bits
-Approach - 
-Iterating through the bits of the input 'n' while right-shifting it by 1 in each step.
-Counting the number of times the least significant bit is '1' and return that count as the result.
-Repository - https://lnkd.in/grhx-t4V
-Time Complexity - O(log n)
-Space Complexity - O(1)
-#100daysofcodechallenge 
+
