@@ -2,8 +2,7 @@ class Solution {
     public int lengthOfLastWord(String s) {        
         // int res = 0;
         // int index = s.length() - 1;
-
-        // // skip the last spaces
+        // skip the last spaces
         // while(index >= 0 && s.charAt(index) == ' '){
         //     index--;
         // }
