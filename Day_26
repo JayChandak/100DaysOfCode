@@ -1,7 +1,6 @@
 class Solution {
     public String capitalizeTitle(String title) {
         List<String> str = new ArrayList<>();
-
         for(String s : title.split(" ")){
             if(s.length() < 3){
                 str.add(s.toLowerCase());
