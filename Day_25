@@ -2,7 +2,6 @@ class Solution {
     public int[] leftRightDifference(int[] nums) {
         int n = nums.length;
         if(nums.length < 2) return new int[] {0};
-
         int diff[] = new int[n], lSum[] = new int[n],rSum[] = new int[n];
         int left = 0,right = 0;
         
