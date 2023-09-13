@@ -1,0 +1,17 @@
+class Solution {
+    public int lastRemaining(int n) {
+        int remaining = n;
+        int ans = 1;
+        int steps = 1;
+        boolean left = true; // for alternate left to right || right to left
+        while(remaining > 1){
+            if(left || remaining % 2 == 1){
+                ans += steps;
+            }
+            steps *= 2;
+            remaining/=2; 
+            left = !left;
+        }
+        return ans;
+    }
+}
